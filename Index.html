@@ -106,6 +106,7 @@
             await meeting.startVideo();
         }
         async function CloseVideo(){
+            await meeting.pauseLocalVideo();
             await meeting.stopVideo();
         }
         async function OpenAudio(){
